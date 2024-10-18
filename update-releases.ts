@@ -33,7 +33,7 @@ const releases: Releases = Object.fromEntries(
   versions.versions
     .filter((version) => !version.version.includes("-"))
     .map((version) => [
-      version.version,
+      version.version.replaceAll(".", "-"),
       Object.fromEntries(
         architectures.flatMap((arch) =>
           platforms.flatMap((platform) => {
