@@ -37,4 +37,5 @@ stdenv.mkDerivation rec {
   installPhase = ''
     install -m755 -D -t $out/bin bin/*
   '';
+  meta.mainProgram = "mongod";
 }
