@@ -38,19 +38,16 @@
               ];
             };
           };
-          availableReleases = lib.attrsets.filterAttrs (
-            version: release: builtins.hasAttr system release.platforms
-          ) releases;
-          versions = (
-            builtins.mapAttrs (
-              version: systems:
-              let
-                release = availableReleases.${version};
-                nixpkgsVersion = if release.openssl == "3.0" then pkgs else pkgs-openssl_1_1;
-                variant = builtins.elemAt release.platforms.${system} 0;
-              in
-              nixpkgsVersion.callPackage ./mongodb.nix {
-                inherit version;
+          releasesForSystem = builtins.filter (release: builtins.hasAttr system release.platforms) releases;
+
+          # [{names = ["8-0-0" "8-0" "8"]; package = <derivation>;} {names = ["8-0-1"]; package = <derivation>;}]
+          packagesWithNames = builtins.map (
+            release:
+            let
+              nixpkgsVersion = if release.openssl == "3.0" then pkgs else pkgs-openssl_1_1;
+              variant = builtins.elemAt release.platforms.${system} 0;
+              package = nixpkgsVersion.callPackage ./mongodb.nix {
+                version = builtins.elemAt release.names 0;
                 inherit (variant) url sha256;
                 openssl =
                   if release.openssl == "1.0" then
@@ -59,9 +56,27 @@
                     nixpkgsVersion.openssl_1_1
                   else
                     nixpkgsVersion.openssl;
-              }
-            ) availableReleases
-          );
+              };
+            in
+            {
+              names = release.names;
+              inherit package;
+            }
+          ) releasesForSystem;
+
+          # { "8-0-0" = <derivation>; "8" = <derivation>; default = <derivation>; }
+          versions =
+            (lib.mergeAttrsList (
+              builtins.concatMap (
+                package:
+                builtins.map (name: {
+                  "${name}" = package.package;
+                }) package.names
+              ) packagesWithNames
+            ))
+            // {
+              default = (builtins.elemAt packagesWithNames 0).package;
+            };
         in
         {
           devShells.default = mkShell {
