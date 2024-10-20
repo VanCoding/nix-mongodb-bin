@@ -43,9 +43,6 @@ type Version = {
 const architectures = ["x86_64", "arm64"];
 const platforms = ["darwin", "linux"];
 
-const SWITCH_TO_OPENSSL_3 = new Date("2022-01-01");
-const SWITCH_TO_OPENSSL_1_1 = new Date("2018-08-01");
-
 const compareVersion = (a: Version, b: Version) => {
   if (a.major !== b.major) return a.major - b.major;
   if (a.minor !== b.minor) return a.minor - b.minor;
@@ -98,9 +95,9 @@ const releases: Release[] = preprocessedVersions
     const latestMinor = isLatestMinor(version, preprocessedVersions);
     return {
       openssl:
-        date >= SWITCH_TO_OPENSSL_3
+        major > 6 || (major === 6 && (minor > 0 || patch > 3))
           ? "3.0"
-          : date >= SWITCH_TO_OPENSSL_1_1
+          : major > 4 || (major === 4 && (minor > 0 || patch > 0))
           ? "1.1"
           : "1.0",
       names: [
