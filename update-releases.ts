@@ -1,7 +1,10 @@
 import { writeFileSync } from "fs";
 
+// notice for myself - Binaries for MongoDB tools can be fetched here:
+// https://downloads.mongodb.org/tools/db/full.json
+
 const versions = (await (
-  await fetch("http://downloads.mongodb.org.s3.amazonaws.com/full.json")
+  await fetch("https://downloads.mongodb.org/full.json")
 ).json()) as {
   versions: Array<{
     version: string;
