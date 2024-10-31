@@ -2,9 +2,41 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"8-0-1",
+			"8-0-3",
 			"8-0",
 			"8"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-8.0.3.tgz",
+					"sha256": "1942051bb17f28dca83eef4718cb34515c3f1f22b94fb8f04eb486639e7f5141"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2404-8.0.3.tgz",
+					"sha256": "dbea001b02bb1e2efd47384cb05dd9e55196ffd662dc4faa1376a9708d3cf69e"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-8.0.3.tgz",
+					"sha256": "7ab4e05385d0f4987596d3ca6f2c96eb37f78511c0728a46b87091170fc01f98"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2404-8.0.3.tgz",
+					"sha256": "a13daf9c69351e634ea61aa3d67fb0877eba6a187d9cc6c7a3b5da0f42c8b8fb"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"8-0-1"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -392,8 +424,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"7-0-14",
+			"7-0-15",
 			"7-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-7.0.15.tgz",
+					"sha256": "22f77326e26d3213c51b07768b3fbb22a2e4de6244893b3c2bfe6cb6c1b1983a"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-7.0.15.tgz",
+					"sha256": "fe50510ccb15bae08f35aae83aba736bd8eaa288b9a2e573b9ac761017a4e18b"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.15.tgz",
+					"sha256": "aac0251a1e04df037db2e072d29558ceb8d1af5473c55a16a0120b32218bf0a6"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2204-7.0.15.tgz",
+					"sha256": "84f5778d88eb6d64dd6ae63377a6d01ad52c92809fea93993eab76bc1372a0fa"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"7-0-14"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -1037,8 +1101,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"6-0-18",
+			"6-0-19",
 			"6-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.19.tgz",
+					"sha256": "6dd65c5332458d70795d5a70bc24c82542899ecd9486ee8a84b83cd833cf5252"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.19.tgz",
+					"sha256": "aacb164308caee37bbffc538f7131203ac4f034b8a624532304aee799777fa3d"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-6.0.19.tgz",
+					"sha256": "3177bf69f53e148a6aa6ab07befeb89a1ecc6ede8ad21262cd07f18ce764dc75"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2204-6.0.19.tgz",
+					"sha256": "1a54e9901de94ecd24d92ff679e52d8af7928fb18b3633e062ab6c2b5a2602b1"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"6-0-18"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -1806,8 +1902,34 @@
 	{
 		"openssl": "1.1",
 		"names": [
-			"5-0-29",
+			"5-0-30",
 			"5-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-5.0.30.tgz",
+					"sha256": "678e22e8b603e1a84ed3565ba00c036e02bed104f49fff3d47cf8c705ffa9a7e"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-5.0.30.tgz",
+					"sha256": "352620816b63cde99a9200f1e462ea4a93c296a54bac0023986796514e77f1a9"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2004-5.0.30.tgz",
+					"sha256": "ad1a110afe3f126cfa86761d249fd934d743ac3c6a1883ab62e4221f463837e6"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "1.1",
+		"names": [
+			"5-0-29"
 		],
 		"platforms": {
 			"x86_64-darwin": [
