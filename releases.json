@@ -456,8 +456,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"7-0-15",
+			"7-0-16",
 			"7-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-7.0.16.tgz",
+					"sha256": "bd03e101d1943a9747602b8addfb6d5c7d93b77966c0ab2bcda4a730c3d57391"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-7.0.16.tgz",
+					"sha256": "376c258ae9b104b88814214bc3214a2e0d1300d8192d24d8c46259f364866422"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.16.tgz",
+					"sha256": "e01c5ce1ef8efbef4196797130564b8f121f6e29f20ccf70e025feba07e15739"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2204-7.0.16.tgz",
+					"sha256": "0259920a7349cb7b52aa22d54cd8cb6e6989120a612ee3b32972a7c7548a221a"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"7-0-15"
 		],
 		"platforms": {
 			"x86_64-darwin": [
