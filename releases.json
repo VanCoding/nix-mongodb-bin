@@ -2,9 +2,41 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"8-2-2",
+			"8-2-3",
 			"8-2",
 			"8"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-8.2.3.tgz",
+					"sha256": "da38cffaf3c072df9d7009fa4502caac3c80b0a4318f890bfb75e50d77d3d5c4"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2404-8.2.3.tgz",
+					"sha256": "3633d52d2aa6e423da1bdff238bef01165b6af01587200aac0864d93f39b608f"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-8.2.3.tgz",
+					"sha256": "a9455021ea2dd8d3b475dac45b98c496ee87572aa2c136d1d52e8a3362c9c15f"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2404-8.2.3.tgz",
+					"sha256": "a15807ad72e36dced706b06bf10b428467f27ecfa10a8b780edf48fd07fd5f71"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"8-2-2"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -229,8 +261,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"8-0-16",
+			"8-0-17",
 			"8-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-8.0.17.tgz",
+					"sha256": "daca542b413f4322cef3199bdceed9c06e0b9999a246f6d72c42afb463349805"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2404-8.0.17.tgz",
+					"sha256": "fe7bccea2ac1eed16867e9ae5a60481455ee30796f285fe67d0d02a6c2abbdda"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-8.0.17.tgz",
+					"sha256": "e1ec5131b8d65f06d3a1a9f1a4bfe6f08a7d2f9c876436d33ab483d2e26840cb"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2404-8.0.17.tgz",
+					"sha256": "8dc5919025dbabe2103b8e187e2102492af93c08842c37114272bd894e5cfc13"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"8-0-16"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -1066,8 +1130,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"7-0-26",
+			"7-0-28",
 			"7-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-7.0.28.tgz",
+					"sha256": "7b50602bba573cfb4dead78b604aa4c1ba809b3cc95879870efbe345ee465742"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-7.0.28.tgz",
+					"sha256": "7fc16f46fb10753b982ab03bd9d7dd5920d18d181259f825c2462ca903c55d4d"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.28.tgz",
+					"sha256": "1388a09743db960785de75aa4b5e077fca1767e9c948ccfaafef6280c862e239"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2204-7.0.28.tgz",
+					"sha256": "28e4cefd35e933d5cf74cf3145c29f30b95d762088b7c23738817227954d5569"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"7-0-26"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -2095,8 +2191,40 @@
 	{
 		"openssl": "3.0",
 		"names": [
-			"6-0-26",
+			"6-0-27",
 			"6-0"
+		],
+		"platforms": {
+			"x86_64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.27.tgz",
+					"sha256": "a58fc602d2cba8144d1ec8900e4fcfc3f29d869ed7ae996019c1ca1337f19fb2"
+				}
+			],
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.27.tgz",
+					"sha256": "3dd6964010a506d3a275db8faf4fea0e8257723198d853ff6f674e054db858bd"
+				}
+			],
+			"arm64-darwin": [
+				{
+					"url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-6.0.27.tgz",
+					"sha256": "2b8a986fc0859fe5004b8912909bb957883cbe73027979664d16394ddd76a2f6"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2204-6.0.27.tgz",
+					"sha256": "f782beb4f3fcba3ca9230207bf825cd23888089b8c635d7d005e640d437e64ed"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "3.0",
+		"names": [
+			"6-0-26"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -3120,8 +3248,28 @@
 	{
 		"openssl": "1.1",
 		"names": [
-			"5-0-31",
+			"5-0-32",
 			"5-0"
+		],
+		"platforms": {
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-5.0.32.tgz",
+					"sha256": "b4f9667642a18ea8d8ffd55d95b5bf75fcca182bd29cd63a1e171914e2a048aa"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2004-5.0.32.tgz",
+					"sha256": "1287150472d72cf3e9473c2e1bb633534997339b96f6d5e797f2d2799cda5286"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "1.1",
+		"names": [
+			"5-0-31"
 		],
 		"platforms": {
 			"x86_64-darwin": [
@@ -3953,9 +4101,29 @@
 	{
 		"openssl": "1.1",
 		"names": [
-			"4-4-29",
+			"4-4-30",
 			"4-4",
 			"4"
+		],
+		"platforms": {
+			"x86_64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-4.4.30.tgz",
+					"sha256": "a2bf4c4db59fa4ad0b629fb598a3ff13257f71af82967ebcb49db7f0441131ca"
+				}
+			],
+			"arm64-linux": [
+				{
+					"url": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2004-4.4.30.tgz",
+					"sha256": "e6afbbd6ee170ff570308993c8efa26016d98e9f16975e9b2766e4593d322ad9"
+				}
+			]
+		}
+	},
+	{
+		"openssl": "1.1",
+		"names": [
+			"4-4-29"
 		],
 		"platforms": {
 			"x86_64-darwin": [
